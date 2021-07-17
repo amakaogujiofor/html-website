@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pineapple and Ginger Drink Recipe</title>
+    <style>
+      body {
+        background: linear-gradient(
+          -20deg,
+          rgb(233, 222, 250) 0%,
+          rgb(251, 252, 219) 100%
+        );
+        font-family: montserrat, Helvetica, sans-serif;
+        line-height: 2;
+      }
+      h1 {
+        font-family: montserrat, Helvetica, sans-serif;
+        font-style: normal;
+        font-size: 3em;
+        text-align: center;
+        color: #9ed79a;
+        margin: 0px 10px;
+      }
+
+      h2 {
+        color: #068b78;
+      }
+
+      .top {
+        display: block;
+        margin: 10px;
+        border-radius: 40%;
+        float: right;
+        padding: 5px 5px;
+      }
+
+      blockquote {
+        text-align: center;
+        color: #ed9153;
+        font-size: 2em;
+      }
+      ul {
+        list-style: none;
+      }
+
+      span {
+        color: #ffcf5e;
+      }
+
+      hr {
+        border: 1px dashed #ed9153;
+        border-radius: 5px;
+      }
+
+      .recipe {
+        text-decoration: none;
+        font-size: 15px;
+        color: #885df1;
+        font-style: bolder;
+      }
+      .recipe:hover {
+        text-decoration: underline;
+        color: #068b78;
+        cursor: pointer;
+      }
+
+      button {
+        width: 250px;
+        border-radius: 50px;
+        font-size: 16px;
+        line-height: 20px;
+        margin: 0 auto;
+        display: block;
+        padding: 15px;
+        background: #068b78;
+        color: #ffffff;
+        border-style: none;
+        text-align: center;
+      }
+
+      button:hover {
+        background: #ffffff;
+        color: #a2c11c;
+        cursor: pointer;
+        opacity: 0.5;
+        box-shadow: 10px 5px 5px #ffdd00;
+        font-weight: bold;
+        transition: 200ms ease-in-out;
+      }
+
+      footer {
+        font-size: small;
+        font-family: monospace;
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>It's all in a Cup!!</h1>
+      <blockquote>
+        “A pineapple has pointy defenses but it’s still sweet.
+        <br />
+        Be a pineapple.” – Unknown
+      </blockquote>
+      <img
+        class="top"
+        src="https://images.unsplash.com/photo-1513558003720-343f3a99d97b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
+        alt="Pineapple-ginger-drink"
+        max-width="80%"
+        width="300px"
+      />
+    </div>
+    <hr />
+    <p>
+      Who wouldn't love <strong>pineapples?</strong> This spicy little
+      <em>elixir</em>
+      made with fresh ginger and yummy tropical pineapples is nature's potion of
+      anti-inflammatory, tommy soothing and immune-boosting wonders that packs a
+      serious punch.
+      <br />
+      You should always go for it when your digestive system needs a little
+      comfort. Just a cold glass of beautifully juiced pineapples and flaming
+      hot ginger makes a bad day turn out super great.
+    </p>
+    <h2>
+      Give it a Shot. <span>Here's an easy recipe to get you going!!</span>
+    </h2>
+    <div>
+      <ul>
+        <li>
+          🍍Prep fruit and roots. Peel and chop pineapple, ginger, turmeric and
+          lime.
+        </li>
+        <li>
+          🍍Juice fruit and roots. Push pineapple, ginger, turmeric and lime one
+          at a time through a high-powered juicer.
+        </li>
+        <li>
+          🍍Stir and Enjoy. Stir the juice with a wooden spoon to blend well.
+        </li>
+        <li>
+          🍍Pour 1/4 glass full of juice, 1/4 glass full of crushed ice, and
+          fill the rest of the glass with coconut water or distilled water.
+        </li>
+        <li>🍍Garnish with lime slices and fresh mint.</li>
+      </ul>
+    </div>
+    <a
+      class="recipe"
+      href="https://www.bbcgoodfood.com/recipes/collection/pineapple-recipes"
+      >Juice up some more recipes here
+    </a>
+    <br />
+    <button>Order A Cup or Two 🍹🍹</button>
+
+    <footer>Designed with 💜💜💜 by Amaka Ogujiofor</footer>
+
+    <script>
+      function OrderNow() {
+        let name = prompt("What is your name?");
+        let order = prompt("How many cups do you want to order?");
+
+        if (order > 0) {
+          alert(
+            "Thank you " + name + " " + "for your order, we'll be in touch 🍹"
+          );
+        } else {
+          alert(
+            "Oops!! Seems like you didn't place an order, I hope you do soon 💜"
+          );
+        }
+      }
+      let OrderButton = document.querySelector("button");
+      OrderButton.addEventListener("click", OrderNow);
+    </script>
+  </body>
+</html>
